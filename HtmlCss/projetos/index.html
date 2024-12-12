@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maxmum-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <!-- informações de endereço -->
+      <div id="adrdress-container">
+        <div class="fade"></div>
+        <div id="adress-content">
+          <h2><ion-icon name="navigate-outline"></ion-icon>Endereço</h2>
+          <p>Rua das flores, 123</p>
+          <h2><ion-icon name="call-outline"></ion-icon>contato</h2>
+          <p>Numero (99)99 9999-9999</p>
+          <h2><ion-icon name="mail-outline"></ion-icon>E-mail</h2>
+          <p>Email: xxxxx_xxxx@xxxxxx.com</p>
+        </div>
+      </div>
+      <!-- formulario para envio -->
+      <div id="form-container"></div>
+    </div>
+    <div id="form-container">
+      <form id="contact-form">
+        <label for="nome-input">nome:</label>
+        <input type="text" name="nome" id="nome-input" />
+        <label for="e-mail-input">Email:</label>
+        <input type="email" name="e-mail" id="e-mail-input" />
+        <label for="telefone-input">Telefone:</label>
+        <input type="tel" name="telefone" id="telefone-input" />
+        <label for="mensagem-input">Sua mensagem:</label>
+        <textarea
+          name="mensagem"
+          id="mensagem-input"
+          cols="30"
+          rows="10"
+          placeholder="Como podemos te ajudar"
+        ></textarea>
+      </form>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

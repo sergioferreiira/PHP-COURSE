@@ -1,0 +1,25 @@
+/* 
+
+position static = fica fixa na tela 
+position absolute = ela sobrepoe respeitando a div ou section pai referente
+positicion relative = ela pode ser alterada pelo left rig top bottom
+position fixed = posiciona na tela e nao e possivel mudar
+position sticky = lembra muito a fixed porem so vai ter mudança apos passar por ela, como se fosse aqueles icones do whatsapp
+
+*/
+
+
+.cadastro{
+ background-color: aquamarine;
+ overflow: auto;
+}
+
+.img-cadastro{
+ padding: 5%;
+ float: left;
+}
+
+.form-cadastro{
+ padding: 5%;
+ float: right;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exemplo de Formulário HTML</title>
+  </head>
+  <body>
+    <!-- A tag header representa o cabeçalho da página, contendo introduções e navegadores principais -->
+    <header>
+      <h1>Bem-vindo ao Meu Site</h1>
+      <!-- A tag nav é usada para definir um conjunto de links de navegação -->
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- A tag main é usada para delimitar o conteúdo principal da página -->
+    <main>
+      <!-- A tag section é usada para separar seções de conteúdo -->
+      <section id="home">
+        <h2>Home</h2>
+        <p>
+          Bem-vindo à página inicial. Aqui você encontrará as últimas novidades.
+        </p>
+      </section>
+
+      <section id="about">
+        <h2>Sobre</h2>
+        <p>Saiba mais sobre nós e nossa missão.</p>
+      </section>
+
+      <section id="services">
+        <h2>Serviços</h2>
+        <p>Descubra os serviços que oferecemos.</p>
+      </section>
+
+      <!-- A tag form é usada para criar um formulário que permite a entrada de dados -->
+      <div class="cadastro">
+        <img class="img-cadastro"   src="img/cadastro.png" alt="imagem de cadastro" >
+        <form class="form-cadastro" action="submit_form.php" method="post">
+          <!-- A tag label é usada para associar um rótulo a um campo de entrada -->
+          <label for="nome">Nome:</label>
+          <!-- A tag input é usada para criar campos de entrada, como texto, e-mail, etc. -->
+          <input type="text" id="nome" name="nome" value="João" required />
+          <br /><br />
+  
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value="joao@example.com"
+            required
+          />
+          <br /><br />
+  
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" name="senha" required />
+          <br /><br />
+  
+          <!-- A tag textarea é usada para criar uma área de texto de múltiplas linhas -->
+          <label for="mensagem">Mensagem:</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="4"
+            cols="50"
+            required
+          ></textarea>
+          <br /><br />
+  
+          <!-- A tag select é usada para criar uma lista suspensa -->
+          <label for="interesse">Interesse:</label>
+          <select id="interesse" name="interesse">
+            <option value="design">Design</option>
+            <option value="programação">Programação</option>
+            <option value="marketing">Marketing</option>
+          </select>
+          <br /><br />
+  
+          <!-- A tag input com type="submit" cria um botão de envio -->
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
+      
+    </main>
+
+    <!-- A tag aside é usada para conteúdo complementar ou secundário -->
+    <aside>
+      <h2>Informações Adicionais</h2>
+      <p>Aqui estão alguns links e recursos adicionais.</p>
+    </aside>
+
+    <!-- A tag footer representa o rodapé da página, contendo informações de copyright e contato -->
+    <footer>
+      <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
