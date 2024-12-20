@@ -7,10 +7,10 @@
     <title>Login</title>
   </head>
   <body>
-    <main>
-      <div class="container">
+    <main id="container-login">
+      <div id="contents">
         <h1>Formulario de login</h1>
-        <form>
+        <form id="form-login">
           <div class="input-container">
             <ion-icon name="mail-outline"></ion-icon>
             <input type="email" name="email" id="email" />
@@ -20,16 +20,19 @@
             <input type="password" name="" id="" />
           </div>
         </form>
-        <div>
-          <div>
+        <div id="submit-contents">
+          <div id="lembrar-me">
             <input type="checkbox" name="lembrar" id="lembrar" />
-            <p>Lembrar senha</p>
+            <p>Lembrar-me</p>
           </div>
-
-          <a href="">Esqueceu sua senha?</a>
+          <div id="recovery-password">
+            <a href="#">Esqueceu sua senha?</a>
+          </div>
         </div>
-        <button type="button">Enviar</button>
-        <p>Não é um membro? <a href="">Cadastre-se agora</a></p>
+        <div id="submit-create">
+          <button type="button">Enviar</button>
+          <p>Não é um membro? <a href="">Cadastre-se agora</a></p>
+        </div>
       </div>
     </main>
     <script

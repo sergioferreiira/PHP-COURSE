@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maxmum-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Projeto</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <!-- informações de endereço -->
+      <div id="adrdress-container">
+        <div class="fade"></div>
+        <div id="adress-content">
+          <h2><ion-icon name="navigate-outline"></ion-icon>Endereço</h2>
+          <p>Rua das flores, 123</p>
+          <h2><ion-icon name="call-outline"></ion-icon>Contato</h2>
+          <p>Numero (99)99 9999-9999</p>
+          <h2><ion-icon name="mail-outline"></ion-icon>E-mail</h2>
+          <p>Email: xxxxx_xxxx@xxxxxx.com</p>
+        </div>
+      </div>
+      <!-- formulario para envio -->
+      <div id="form-container">
+        <h2>Nos mande uma mensagem !</h2>
+        <form id="contact-form">
+          <label for="nome-input">Nome:</label>
+          <input type="text" name="nome" id="nome-input" placeholder="Digite seu nome"/>
+          <label for="e-mail-input">E-mail:</label>
+          <input type="email" name="e-mail" id="e-mail-input" placeholder="Digite seu e-mail"/>
+          <label for="telefone-input">Telefone:</label>
+          <input type="tel" name="telefone" id="telefone-input" placeholder="Digite seu telefone"/>
+          <label for="mensagem-input">Sua mensagem:</label>
+          <textarea
+            name="mensagem"
+            id="mensagem-input"
+            cols="5"
+            rows="2"
+            placeholder="Como podemos te ajudar"
+          ></textarea>
+          <input type="submit" value="Enviar Mensagem">
+        </form>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

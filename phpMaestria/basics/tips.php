@@ -25,8 +25,14 @@
  compacta = faz o contrario do extract usa as variaveis para criar um array associativo porem deve utilizar as variaveis como string
  
  
- array_reduce = passa por um array e passa por uma funcao
- 
+ array_reduce = passa por um array e passa por uma funcao ex soma
+
+ $array = [1,2,3,4,5,6]
+
+ func sum(a ,b)
+ return a +b
+
+ $newArray =array_reduce($array, "sum")
  
  
  
