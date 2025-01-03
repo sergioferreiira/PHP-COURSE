@@ -1,10 +1,13 @@
 <?php
 
-// $carName = $_POST["nomeCarro"];
-// $marcaCarro = $_POST["marcaCarro"];
-// $opcoes = $_POST["opcionais"];
+$carName = $_POST["nomeCarro"];
+$marcaCarro = $_POST["marcaCarro"];
+$opcoes = $_POST["opcionais"];
 
+echo $carName."<br>".$marcaCarro . "<br>";
 
-// print_r($carName " ". $marcaCarro . $opcoes);
+print_r($opcoes);
 
-print_r($_POST);
+// print_r($_POST);
+
+?>
