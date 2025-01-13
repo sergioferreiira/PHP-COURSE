@@ -1,0 +1,207 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+  position: relative;
+}
+
+header,
+footer {
+  background-color: rgb(22, 22, 22);
+  padding: 900px;
+}
+
+/* HEADER */
+header #logo {
+  position: absolute;
+  align-items: left;
+  top: 10px;
+  left: 9.5%;
+}
+header #logo img {
+  width: 50px;
+  transition: 2s;
+}
+header #logo img:hover {
+  transform: rotate(360deg);
+  left: 20%;
+}
+
+header #navbar {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+
+  list-style: none;
+}
+header #navbar .nav-link {
+  font-weight: 200;
+  margin: 0 10px;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  transition: 0.7s;
+  font-size: 14px;
+}
+header #navbar .nav-link:hover {
+  font-weight: 500;
+  color: white;
+  font-size: 16px;
+}
+/* HEADER */
+
+/* BODY */
+body {
+  background-color: white;
+}
+/* BODY */
+
+/* MAIN */
+main {
+  margin-bottom: 250px;
+}
+
+#main-title {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+#main-title h1 {
+  font-size: 50px;
+}
+
+#main-title p {
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: #ccc;
+}
+
+#posts-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-box:first-child {
+  min-width: 100%;
+}
+.post-box {
+  flex: 1 1 0;
+  margin-bottom: 20px;
+}
+.post-box img {
+  width: 100%;
+}
+.post-box:nth-child(3) {
+  margin: 0 1%;
+}
+.post-box h2 {
+  margin-top: 20px;
+}
+.post-box a {
+  color: black;
+}
+.post-box p {
+  margin: 10px 0;
+  color: #ccc;
+}
+
+/* MAIN */
+
+/* POST PAGE */
+#main-post-container {
+  display: flex;
+  justify-content: center;
+}
+#post-container {
+  margin: 2% 1%;
+  display: grid;
+  grid-template-columns: 73% 25%;
+  grid-template-rows: auto;
+  grid-template-areas: "main sidebar";
+  gap: 2%;
+  max-width: 1200px;
+}
+#post-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+#post-description {
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+#div-container img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+#div-container p {
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+#nav-container .subtitles {
+  text-align: center;
+  font-weight: 400;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+.list-side a ,.list-itens {
+color: #666;
+transition: 0.7s;
+margin: 2% 0;
+list-style: none;
+}
+
+
+.list-side a:hover,.list-itens:hover {
+  color: black;
+  }
+/* END POST PAGE */
+
+/* FOOTER */
+footer {
+  text-transform: capitalize;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+footer p {
+  color: white;
+  font-weight: 200;
+}
+/* FOOTER */
+
+
+
+
+
+/* MOBILE */
+
+@media (max-width: 680px) {
+
+  header{
+    width: 100px;
+  }
+
+  header #logo{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+  }
+}
