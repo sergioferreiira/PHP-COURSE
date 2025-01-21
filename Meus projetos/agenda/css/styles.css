@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#headerId {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: auto;
+  background-color: rgb(46, 100, 247);
+}
+
+#headerId a {
+  margin-left: 20px;
+  padding: 10px;
+  color: white;
+  text-decoration-line: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  transition: 0.5s;
+}
+
+#headerId a:hover {
+  color: rgb(151, 151, 151);
+}
+
+#imgLogo {
+  width: 60px;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0;
+}
+
+

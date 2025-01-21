@@ -1,9 +1,8 @@
 <?php
-
-$servername = "localhost:3307";
+$servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "msqliphp";
+$dbname = "phplearning";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -11,7 +10,7 @@ if ($conn->connect_error) {
     echo "Error: ". $conn->connect_error;
 }
 
-$q = "SELECT * FROM cards";
+$q = "SELECT * FROM itens";
 
 $result = $conn->query($q);
 $conn->close();

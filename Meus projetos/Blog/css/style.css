@@ -13,7 +13,7 @@ html {
 header,
 footer {
   background-color: rgb(22, 22, 22);
-  padding: 900px;
+  padding: 30px;
 }
 
 /* HEADER */
@@ -191,17 +191,3 @@ footer p {
 
 
 /* MOBILE */
-
-@media (max-width: 680px) {
-
-  header{
-    width: 100px;
-  }
-
-  header #logo{
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    left: 0;
-  }
-}
