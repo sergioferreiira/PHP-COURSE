@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+/* HEADER */
 #headerId {
   display: flex;
   justify-content: left;
@@ -27,8 +28,15 @@
 
 #imgLogo {
   width: 60px;
+  transition: 0.5s;
+}
+#imgLogo:hover {
+  rotate: 360deg;
 }
 
+/* HEADER */
+
+/* BODY INDEX */
 #main-title {
   text-align: center;
   margin: 40px 0;
@@ -39,41 +47,52 @@
   background-color: #007bff;
 }
 
-.col-id{
+.col-id {
   font-weight: bold;
 }
 
-.actions{
+.actions {
   text-align: center;
   width: 200px;
 }
 
-.action i{
+.action i {
   font-size: 18px;
   margin-right: 5px;
 }
 
-.check-icon{
+.check-icon {
   color: #1e7e34;
+  transition: 0.8s;
 }
-.edit-icon{
+.check-icon:hover{
+  font-size: 20px;
+}
+.edit-icon {
   color: #007bff;
+  transition: 0.8s;
 }
-.delete-btn{
+.edit-icon:hover{
+  font-size: 20px;
+}
+.delete-btn {
   background-color: transparent;
   border: none;
   padding: 0;
 }
-.delete-icon{
+.delete-icon {
   color: #bd2130;
+  transition: 0.8s;
 }
-
+.delete-icon:hover{
+  font-size: 20px;
+}
 
 #empty-list-text {
   text-align: center;
 }
 
-#msg{
+#msg {
   color: #155724;
   background-color: #d4edda;
   border: 1px solid #c3e6cb;
@@ -84,4 +103,28 @@
   margin-top: 30px;
 }
 
+/* BODY INDEX */
 
+/* ABOUT CONTACT */
+#container-button {
+  display: flex;
+  height: auto;
+  align-items: center;
+}
+#view-button {
+  position: absolute;
+  color: #007bff;
+  padding: 3px;
+  border: 1px solid #007bff;
+  border-radius: 10px;
+  margin: 50px 0 0 0;
+  text-decoration: none;
+  transition: 0.3s;
+}
+#view-button:hover {
+  padding: 5px;
+  background-color: #007bff;
+  border: 1px solid #fff;
+  color: #fff;
+}
+/* ABOUT CONTACT */

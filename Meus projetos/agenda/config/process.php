@@ -5,35 +5,30 @@ include_once("connection.php");
 
 
 
-$id;
+if (!empty($_GET)) {
+ try {
+  $id = $_GET['id'];
+  $stmt = $conn->prepare("SELECT * FROM contatos WHERE id = :id");
+ 
+ 
+  $stmt->bindParam(":id", $id);
+ 
+  $stmt->execute();
+ 
+  $result = $stmt->fetch();
+ }catch (Error $out) {
+  echo "erro" . $out;
 
-if(!empty($_GET)){
- $id = $_GET['id'];
- $stmt = $conn->prepare("SELECT * FROM contatos WHERE id = :id");
+ }
 
+}else {
+ // retorna todos contatos
 
-$stmt->bindParam(":id", $id);
+ $query = "SELECT * FROM contatos";
 
-$stmt->execute();
+ $stmt = $conn->prepare($query);
 
-$result = $stmt->fetch();
-}else{
-// retorna todos contatos
+ $stmt->execute();
 
-$query = "SELECT * FROM contatos";
-
-$stmt = $conn->prepare($query);
-
-$stmt->execute();
-
-$datas = $stmt->fetchAll();
+ $datas = $stmt->fetchAll();
 }
-
-
-
-
-
-
-
-
-
